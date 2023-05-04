@@ -1,0 +1,13 @@
+print("Welcome to the bill calculator")
+tot=input("What was the total bill? ")
+billtot=float(tot)
+t=input("What Percentage bill would you like to give? 10% ,12% or 15% ? ")
+tipperc=int(t)
+n=input("How many people to slipt the bill? ")
+num=int(n)
+tipperc=round( tipperc/100 , 2)
+to=float(tipperc * billtot)
+billwithtips=to+billtot
+res=round((billwithtips/num),2)
+r=str(res)
+print("Each Person Will Pay $"+r)
